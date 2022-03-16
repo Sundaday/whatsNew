@@ -1,0 +1,16 @@
+D:\Dev\BACKEND\C#\What's-new-in-C\What's-new-in-C\bin\Debug\net5.0\What's-new-in-C.exe
+D:\Dev\BACKEND\C#\What's-new-in-C\What's-new-in-C\bin\Debug\net5.0\What's-new-in-C.deps.json
+D:\Dev\BACKEND\C#\What's-new-in-C\What's-new-in-C\bin\Debug\net5.0\What's-new-in-C.runtimeconfig.json
+D:\Dev\BACKEND\C#\What's-new-in-C\What's-new-in-C\bin\Debug\net5.0\What's-new-in-C.runtimeconfig.dev.json
+D:\Dev\BACKEND\C#\What's-new-in-C\What's-new-in-C\bin\Debug\net5.0\What's-new-in-C.dll
+D:\Dev\BACKEND\C#\What's-new-in-C\What's-new-in-C\bin\Debug\net5.0\What's-new-in-C.pdb
+D:\Dev\BACKEND\C#\What's-new-in-C\What's-new-in-C\obj\Debug\net5.0\What's-new-in-C.csproj.AssemblyReference.cache
+D:\Dev\BACKEND\C#\What's-new-in-C\What's-new-in-C\obj\Debug\net5.0\What's-new-in-C.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev\BACKEND\C#\What's-new-in-C\What's-new-in-C\obj\Debug\net5.0\What's-new-in-C.AssemblyInfoInputs.cache
+D:\Dev\BACKEND\C#\What's-new-in-C\What's-new-in-C\obj\Debug\net5.0\What's-new-in-C.AssemblyInfo.cs
+D:\Dev\BACKEND\C#\What's-new-in-C\What's-new-in-C\obj\Debug\net5.0\What's-new-in-C.csproj.CoreCompileInputs.cache
+D:\Dev\BACKEND\C#\What's-new-in-C\What's-new-in-C\obj\Debug\net5.0\What's-new-in-C.dll
+D:\Dev\BACKEND\C#\What's-new-in-C\What's-new-in-C\obj\Debug\net5.0\refint\What's-new-in-C.dll
+D:\Dev\BACKEND\C#\What's-new-in-C\What's-new-in-C\obj\Debug\net5.0\What's-new-in-C.pdb
+D:\Dev\BACKEND\C#\What's-new-in-C\What's-new-in-C\obj\Debug\net5.0\What's-new-in-C.genruntimeconfig.cache
+D:\Dev\BACKEND\C#\What's-new-in-C\What's-new-in-C\obj\Debug\net5.0\ref\What's-new-in-C.dll
