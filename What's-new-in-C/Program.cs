@@ -94,17 +94,20 @@ namespace What_s_new_in_C
             Console.WriteLine();
 
             //Types simples (int,float,char...) -> Value type (valeur)
-            //Structures -> Value Type (valeur = les valeurs des champs)
-            //class -> Reference Type (valeur = adresse de l'objet)
+            //Struct -> Value Type (valeur = les valeurs des champs)
+            //Class -> Reference Type (valeur = adresse de l'objet)
+            //Record -> Reference Type (valeur = les valeurs des champs)
 
             Console.WriteLine("Record");
             var personne6 = new PersonneRecord() { name = "Toto", id = 5 };
-            var personne7 = new PersonneRecord() { name = "Toto", id = 5 };
-            //var personne6 = personne7; //True
-                                       //personne1.name = "Tata";
+            //var personne7 = new PersonneRecord() { name = "Toto", id = 5 }; true
 
-            personne1.Afficher();
-            personne2.Afficher();
+            //Record clone les valeurs mais pas la reference; Equals sera donc false;
+            var personne7 = personne6 with { }; //True
+            personne6.name = "Titi";
+
+            personne6.Afficher();
+            personne7.Afficher();
 
             Console.WriteLine(personne6.Equals(personne7)); //False
             Console.WriteLine();
