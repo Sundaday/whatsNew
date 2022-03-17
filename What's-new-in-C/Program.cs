@@ -17,6 +17,17 @@ namespace What_s_new_in_C
         public string name { get; set; }
         public int id { get; set; }
 
+        public PersonneRecord(string name, int id)
+        {
+            this.name = name;
+            this.id = id;
+        }
+
+        public void Deconstruct(out string name, out int id)
+        {
+            name = this.name;
+            id = this.id;
+        }
         public void Afficher()
         {
             Console.WriteLine("name: " + name + ", id: " + id);
@@ -96,13 +107,13 @@ namespace What_s_new_in_C
             //Types simples (int,float,char...) -> Value type (valeur)
             //Struct -> Value Type (valeur = les valeurs des champs)
             //Class -> Reference Type (valeur = adresse de l'objet)
-            //Record -> Reference Type (valeur = les valeurs des champs)
+            //Record -> Value Type (valeur = les valeurs des champs)
 
             Console.WriteLine("Record");
             var personne6 = new PersonneRecord() { name = "Toto", id = 5 };
             //var personne7 = new PersonneRecord() { name = "Toto", id = 5 }; true
 
-            //Record clone les valeurs mais pas la reference; Equals sera donc false;
+            //Record clone les valeurs mais pas la reference; Equals sera donc false Toto != Titi;
             var personne7 = personne6 with { }; //True
             personne6.name = "Titi";
 
