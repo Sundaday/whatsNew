@@ -110,18 +110,20 @@ namespace What_s_new_in_C
             //Record -> Value Type (valeur = les valeurs des champs)
 
             Console.WriteLine("Record");
-            var personne6 = new PersonneRecord() { name = "Toto", id = 5 };
+            var personne6 = new PersonneRecord("Toto",5);
+            var ( name, id ) = personne6;
+            Console.WriteLine(name);
+            Console.WriteLine(id);
             //var personne7 = new PersonneRecord() { name = "Toto", id = 5 }; true
 
             //Record clone les valeurs mais pas la reference; Equals sera donc false Toto != Titi;
-            var personne7 = personne6 with { }; //True
-            personne6.name = "Titi";
-
+            //var personne7 = personne6 with { }; //True
+            //personne6.name = "Titi";
             personne6.Afficher();
-            personne7.Afficher();
+            //personne7.Afficher();
 
-            Console.WriteLine(personne6.Equals(personne7)); //False
-            Console.WriteLine();
+            //Console.WriteLine(personne6.Equals(personne7)); //False
+            //Console.WriteLine();
         }
     }
 }
