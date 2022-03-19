@@ -12,27 +12,30 @@ namespace What_s_new_in_C
             Console.WriteLine("name: " + name + ", id: " + id);
         }
     }
-    record PersonneRecord
-    {
-        public string name { get; set; }
-        public int id { get; set; }
+    //record PersonneRecord
+    //{
+    //    public string name { get; set; }
+    //    public int id { get; set; }
 
-        public PersonneRecord(string name, int id)
-        {
-            this.name = name;
-            this.id = id;
-        }
+    //    public PersonneRecord(string name, int id)
+    //    {
+    //        this.name = name;
+    //        this.id = id;
+    //    }
 
-        public void Deconstruct(out string name, out int id)
-        {
-            name = this.name;
-            id = this.id;
-        }
-        public void Afficher()
-        {
-            Console.WriteLine("name: " + name + ", id: " + id);
-        }
-    }
+    //    public void Deconstruct(out string name, out int id)
+    //    {
+    //        name = this.name;
+    //        id = this.id;
+    //    }
+    //    public void Afficher()
+    //    {
+    //        Console.WriteLine("name: " + name + ", id: " + id);
+    //    }
+    //}
+
+    record PersonneRecord(string name, int id);
+
     class PersonneClass
     {
         public string name { get; set; }
@@ -113,13 +116,14 @@ namespace What_s_new_in_C
             var personne6 = new PersonneRecord("Toto",5);
             var ( name, id ) = personne6;
             Console.WriteLine(name);
-            Console.WriteLine(id);
+            Console.WriteLine(id); 
+            Console.WriteLine(personne6);
             //var personne7 = new PersonneRecord() { name = "Toto", id = 5 }; true
 
             //Record clone les valeurs mais pas la reference; Equals sera donc false Toto != Titi;
             //var personne7 = personne6 with { }; //True
             //personne6.name = "Titi";
-            personne6.Afficher();
+            //personne6.Afficher();
             //personne7.Afficher();
 
             //Console.WriteLine(personne6.Equals(personne7)); //False
